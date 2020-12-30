@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzamatic - ORder Your Pizza</title>
+</head>
+<body>
+<header>
+    <h1>Order Your Pizza</h1>
+</header>
+<main>
+    <form action="./order.html" method="GET">
+        <section>
+            <label for="pizza_name">Name Your Pizza</label><br>
+            <input type="text" name="pizza_name" id="pizza_name">
+        </section>
+        <section>
+            <br>
+            <label for="pizza_base">Select Your Base:</label><br>
+            <select name="" id="pizza_base">
+                <option value="standart">Standart</option>
+                <option value="thin">Thin Crust</option>
+                <option value="stuffed">Stuffed</option>
+            </select>
+        </section>
+            <br>
+        <section>
+            <label for="pizza_base_souce">Select Base Souce:</label><br>
+            <input id="pizza_base_souce" type="text" list="pizza_souce_list">
+            <datalist  id="pizza_souce_list">
+                <option value="Tomato Souce"></option>
+                <option value="BBQ Souce"></option>
+                <option value="Hot BBQ Souce"></option>
+            </datalist>   
+        </section>
+        <section>
+            <label for="pizza_size">Select size:</label> <br>
+            <span>Small</span>
+            <input type="range" name="" id="pizza_size" min="0" max="4" step="1">
+            <span>Extra Large</span>
+        </section>
+        <section>
+            <label for="">Select Toppings</label>
+            <input type="checkbox" name="" id="mushroom" value="mushroom">
+            <label for="mushroom">Mushroom</label>
+            <input type="checkbox" name="" id="olive"value="olive">
+            <label for="olive" >Olive</label>
+            <input type="checkbox" name="" id="onion"value="onion">
+            <label for="onion" >Onion</label>
+        </section>
+        <section>
+            <label for="">Do you wanna get extra cheese?</label><br>
+            <input type="radio" name="extra_cheese" id="extra_cheese" value="yes">
+            <label for="extra_cheese" name="extra_cheese">Yes</label>
+            <input type="radio" name="extra_cheese" id="no_extra_cheese" value="no">
+            <label for="no_extra_cheese" >No</label>
+        </section>
+        <br>
+        <section>
+            <label for="collec_time">When will you pick up?</label>
+            <input type="number" name="collec_time" id="collec_time" min="15" step="5" >
+        </section>
+        <br>
+        
+        <section>
+            <button>Submit</button>
+        </section>
+
+
+
+    
+
+    </form>
+</main>
+<hr>
+<footer>
+    &copy; 2020 PizzaMatic
+</footer>
+</body>
+</html>

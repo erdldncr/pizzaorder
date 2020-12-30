@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzamatic - ORder Your Pizza</title>
+</head>
+<body>
+<table style="border:1px solid black;">
+    <tr >
+        <td style="border:1px solid blue; padding: 5px;">
+            <header>
+                <h1>Order Your Pizza</h1>
+            </header>
+            <main>
+                <form action="order_bevareges.html" method="GET">
+                    <section>
+                        <label for="pizza_name">Name Your Pizza</label><br>
+                        <input type="text" name="pizza_name" id="pizza_name">
+                    </section>
+                    <section>
+                        <br>
+                        <label for="pizza_base">Select Your Base:</label><br>
+                        <select name="" id="pizza_base">
+                            <option value="standart">Standart</option>
+                            <option value="thin">Thin Crust</option>
+                            <option value="stuffed">Stuffed</option>
+                        </select>
+                    </section>
+                        <br>
+                    <section>
+                        <label for="pizza_base_souce">Select Base Souce:</label><br>
+                        <input id="pizza_base_souce" type="text" list="pizza_souce_list">
+                        <datalist  id="pizza_souce_list">
+                            <option value="Tomato Souce"></option>
+                            <option value="BBQ Souce"></option>
+                            <option value="Hot BBQ Souce"></option>
+                        </datalist>   
+                    </section>
+                    <section>
+                        <label for="pizza_size">Select size:</label> <br>
+                        <span>Small</span>
+                        <input type="range" name="" id="pizza_size" min="0" max="4" step="1">
+                        <span>Extra Large</span>
+                    </section>
+                    <section>
+                        <label for="">Select Toppings</label><br>
+                        <input type="checkbox" name="" id="mushroom" value="mushroom">
+                        <label for="mushroom">Mushroom</label>
+                        <input type="checkbox" name="" id="olive"value="olive">
+                        <label for="olive" >Olive</label>
+                        <input type="checkbox" name="" id="onion"value="onion">
+                        <label for="onion" >Onion</label>
+                    </section>
+                    <section>
+                        <label for="">Do you wanna get extra cheese?</label><br>
+                        <input type="radio" name="extra_cheese" id="extra_cheese" value="yes">
+                        <label for="extra_cheese" name="extra_cheese">Yes</label>
+                        <input type="radio" name="extra_cheese" id="no_extra_cheese" value="no">
+                        <label for="no_extra_cheese" >No</label>
+                    </section>
+                    <br>
+                    
+                    <section>
+                        <button>Submit</button>
+                    </section>
+                  
+            
+                
+            
+                </form>
+            </main>
+        </td>
+        <td style="border:1px solid blue; padding: 5px;" >
+            <header>
+             <h1>Order Your Drink</h1>
+            </header>
+            <main>
+                <form action="order_bevareges.html" method="GET">
+                <section>
+                    <label for="drink_name">Name Your Order</label> <br>
+                    <input type="text" name="drink_name" id="drink_name">
+                </section>
+                <section>
+                    <br>
+                   
+                    <label for="drink_type">What kind of drink are you looking for?</label> <br>
+                    <select name="drink_type" id="drink_type">
+                        <option value="Alcholic">Alcholic</option>
+                        <option value="Non-Alcholic">Non-Alcholic</option>
+                    </select>
+                </section>
+                <section>
+                    <br>
+                   
+                    <label for="drink_size">What size drink are you looking for?</label><br>
+                    <input type="text" name="drink_size" list="drink_size_list" id="drink_size">
+                    <datalist id="drink_size_list" name="drink_size">
+                        <option value="Small"></option>
+                        <option value="Medium"></option>
+                        <option value="Large"></option>
+                        <option value="Extra-Large"></option>
+                    </datalist>
+                </section>
+                <section>
+                    
+                    
+                    <label for="ice_cubes">How Many Ice cubes Do you need?</label> <br>
+                    <span>0</span>
+                    <input type="range" name="ice_cubes" id="ice_cubes" min="0" max="5" step="1">
+                    <span>5</span>
+                </section>
+                <section>
+                    <label for="extra">What do you want extra with your drink?</label><br>
+                    <input type="checkbox" name="extra" id="plastic_glass">
+                    <label for="plastic_glass">Plastic Glass</label>
+                    <input type="checkbox" name="glass" id="glass">
+                    <label for="glass">Glass</label>
+                    <input type="checkbox" name="straw" id="straw">
+                    <label for="straw">Straw</label>
+                </section>
+                <section>
+                    <label for="sure">Are you sure with your order></label><br>
+                    <input type="radio" name="sure" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="sure" id="no">
+                    <label for="sure">No</label>
+                </section>
+                <br>
+                <section>
+                    <button >Confirm</button>
+                </section>
+                
+                </form>
+            </main>
+        </td>
+    </tr>
+</table>
+<hr>
+<footer>
+    &copy; 2020 PizzaMatic
+</footer>
+</body>
+</html>
